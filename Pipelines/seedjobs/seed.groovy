@@ -1,5 +1,5 @@
-freeStyleJob('myFirstJob') {
+freeStyleJob('myexample') {
     steps {
-        shell('echo Hello Raj World!')
+        shell('echo Hello all is well')
     }
 }
