@@ -1,5 +1,5 @@
-job('myFirst') {
+job('myFirstJob') {
     steps {
-        shell('echo Hello World!')
+        shell('echo Hello Raj World!')
     }
 }
