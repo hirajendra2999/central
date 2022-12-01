@@ -1,0 +1,25 @@
+pipeline {
+    agent any 
+    stages {
+        stage('pull') { 
+            steps {
+                git branch: 'master', credentialsId: 'github.raj', url: 'https://github.com/hirajendra2999/central.git'
+            }
+        }
+        stage('Build') { 
+            steps {
+                sh 'echo "Build Successfull"'
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh 'echo "Test Successfull"'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                sh 'echo "Deploy Successfull"'
+            }
+        }
+    }    
+}
