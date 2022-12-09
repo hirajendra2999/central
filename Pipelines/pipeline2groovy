@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') { 
             steps {
-                git branch: 'master', credentialsId: 'github.raj', url: 'https://github.com/hirajendra2999/central.git'
+                git credentialsId: 'github-cred', url: 'https://github.com/hirajendra2999/central.git'
             }
         }
         stage('Build') { 
