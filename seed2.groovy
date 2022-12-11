@@ -1,5 +1,5 @@
 freeStyleJob('new built pro') {
     steps {
-        shell('project done 1112')
+        shell('echo project done 1112')
     }
 }
